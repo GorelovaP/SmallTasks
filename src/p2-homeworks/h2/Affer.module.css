@@ -1,0 +1,23 @@
+.affair{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.affairName{
+    width: 100px;
+    padding-left: 5px;
+}
+.affairPriority{
+    width: 60px;
+    margin-right: 5px;
+}
+.high{
+  color: green;
+}
+.low{
+    color: red;
+}
+.middle{
+    color: orange;
+}

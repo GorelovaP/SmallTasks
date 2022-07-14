@@ -1,0 +1,28 @@
+.greeting {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.blue  {
+    border-bottom: 5px solid #BDBDBDFF ! important;
+}
+.blue:focus, .blue:focus:hover {
+    border-bottom: 5px solid #2EE59D ! important;
+}
+
+
+.blue:hover {
+    border-bottom: 5px solid #2EE59D66 ! important;
+}
+
+.errorArea {
+    height: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+.error {
+    border: 2px solid red;
+}
