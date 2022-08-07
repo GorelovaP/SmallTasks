@@ -1,0 +1,17 @@
+.block {
+    display: flex;
+    justify-content: start;
+}
+.block_1{
+    max-width: 200px;
+    margin: 5px;
+}
+.element{
+    display: flex;
+    justify-content: space-between ;
+}
+.heading{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #343434;
+}
