@@ -1,0 +1,9 @@
+.range {
+    display: block;
+    width: 130px;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+}
