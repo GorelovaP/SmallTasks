@@ -1,22 +1,30 @@
 import React from "react";
 import s from "./HW12.module.css";
+import SuperSelect from "../h7/common/c5-SuperSelect/SuperSelect";
+import {useDispatch} from "react-redux/es/exports";
+import {AppStoreType} from "../h10/bll/store";
+import {changeThemeAC, ThemeType} from "./bll/themeReducer";
+import {useSelector} from "react-redux";
 
-const themes = ['dark', 'red', 'some'];
 
 function HW12() {
-    const theme = 'some'; // useSelector
 
-    // useDispatch, onChangeCallback
+    let dispatch = useDispatch();
+    let options = useSelector<AppStoreType, ThemeType>(state => state.themes.theme)
+    let theme = useSelector<AppStoreType, string>(state => state.themes.currentTheme)
 
+
+    const onChangeCallback = (theme: string) => {
+        dispatch(changeThemeAC(theme))
+    }
     return (
         <div className={s[theme]}>
             <hr/>
             <span className={s[theme + '-text']}>
-                homeworks 12
+                homeworks 12<br/>
+                Выберете цвет блока:
             </span>
-
-            {/*should work (должно работать)*/}
-            {/*SuperSelect or SuperRadio*/}
+            <SuperSelect value={theme} onChangeOption={onChangeCallback} options={options}/>
 
             <hr/>
         </div>

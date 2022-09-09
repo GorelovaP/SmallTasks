@@ -1,17 +1,17 @@
 .dark {
-    background: dimgrey;
+    background: #343434;
 }
 
 .dark-text {
-    color: aliceblue;
+    color: #2EE59D;
 }
 
 .red {
-    background: lightcoral;
+    background: #cd4e4e;
 }
 
 .red-text {
-    color: aqua;
+    color: whitesmoke;
 }
 
 .some {
@@ -19,5 +19,21 @@
 }
 
 .some-text {
-    color: darkslateblue;
+    color: #000000;
+}
+
+.grey {
+    background: #535353;
+}
+
+.grey-text {
+    color: cornflowerblue;
+}
+
+.marin {
+    background: #6370e3;
+}
+
+.marin-text {
+    color: mediumaquamarine;
 }

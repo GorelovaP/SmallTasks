@@ -45,6 +45,7 @@ export default function SuperDoubleRange(props: PropsType) {
                 onChange={(event: ChangeEvent<{}>, value: number | number[]) => handleChange(event, value)}
                 valueLabelDisplay="auto"
                 getAriaValueText={valuetext}
+                color={"primary"}
             />
         </div>
     );
